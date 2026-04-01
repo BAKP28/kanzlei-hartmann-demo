@@ -122,10 +122,21 @@
             </div>
           </div>
 
-          <!-- Google Maps -->
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4!2d13.3!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850e1e9b0f0a1%3A0x1234567890abcdef!2sKurf%C3%BCrstendamm%2042%2C%2010719%20Berlin!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Standort Kanzlei Hartmann &amp; Kollegen"></iframe>
+          <!-- Google Maps (DSGVO-konform: erst nach Klick laden) -->
+          <div class="map-container" id="map-container">
+            <div class="map-placeholder" id="map-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p style="margin:.75rem 0 .25rem;font-weight:600;color:var(--navy);font-size:.95rem;">Google Maps</p>
+              <p style="font-size:.8rem;color:var(--text-light);margin-bottom:1rem;">Beim Laden der Karte werden Daten an Google übertragen.</p>
+              <button class="btn btn-navy" onclick="loadMap()" style="font-size:.85rem;padding:.6rem 1.5rem;">Karte laden</button>
+            </div>
           </div>
+          <script>
+            function loadMap() {
+              document.getElementById('map-placeholder').remove();
+              document.getElementById('map-container').innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4!2d13.3!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850e1e9b0f0a1%3A0x1234567890abcdef!2sKurf%C3%BCrstendamm%2042%2C%2010719%20Berlin!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Standort Kanzlei Hartmann &amp; Kollegen" style="width:100%;height:100%;border:0;"></iframe>';
+            }
+          </script>
         </div>
 
       </div>
