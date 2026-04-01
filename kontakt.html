@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Hartmann & Kollegen | Rechtsanwälte Berlin</title>
+  <meta name="description" content="Kontaktieren Sie Kanzlei Hartmann & Kollegen in Berlin-Charlottenburg. Vereinbaren Sie jetzt Ihre Erstberatung.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">H</div><div class="logo-text">Hartmann & Kollegen<span>Rechtsanwälte</span></div></a>
+      <nav class="nav">
+        <a href="index.html">Startseite</a><a href="kanzlei.html">Kanzlei</a><a href="rechtsgebiete.html">Rechtsgebiete</a><a href="team.html">Team</a><a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html" class="btn btn-gold">Erstberatung</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Startseite</a><span>/</span><span>Kontakt</span></div>
+      <h1>Kontakt aufnehmen</h1>
+      <p>Vereinbaren Sie Ihre unverbindliche Erstberatung — wir melden uns zeitnah bei Ihnen.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Formular -->
+        <div class="fade-in">
+          <h2 style="margin-bottom:.5rem;">Nachricht senden</h2>
+          <p style="margin-bottom:2rem;">Beschreiben Sie kurz Ihr Anliegen — wir melden uns in der Regel innerhalb von 24 Stunden bei Ihnen.</p>
+
+          <form action="https://formspree.io/f/IHRE_FORMSPREE_ID" method="POST">
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="phone">Telefon (optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="030 / ...">
+              </div>
+              <div class="form-group">
+                <label for="rechtsgebiet">Rechtsgebiet *</label>
+                <select id="rechtsgebiet" name="rechtsgebiet" required>
+                  <option value="" disabled selected>Bitte wählen</option>
+                  <option value="Familienrecht">Familienrecht</option>
+                  <option value="Arbeitsrecht">Arbeitsrecht</option>
+                  <option value="Mietrecht">Mietrecht</option>
+                  <option value="Strafrecht">Strafrecht</option>
+                  <option value="Sonstiges">Sonstiges / Unsicher</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Ihre Nachricht *</label>
+              <textarea id="message" name="message" required placeholder="Beschreiben Sie kurz Ihr Anliegen..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox-group">
+                <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                <label for="datenschutz">Ich habe die <a href="datenschutz.html" style="color:var(--gold);text-decoration:underline;">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Nachricht absenden
+            </button>
+          </form>
+        </div>
+
+        <!-- Kontaktinfo + Map -->
+        <div class="fade-in fade-in-delay-2">
+          <h2 style="margin-bottom:1.5rem;">Unsere Kanzlei</h2>
+
+          <div class="contact-info-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h4>Adresse</h4>
+              <p>Kanzlei Hartmann & Kollegen<br>Kurfürstendamm 42<br>10719 Berlin-Charlottenburg</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <h4>Telefon</h4>
+              <a href="tel:+493012345678">030 / 123 456 78</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <h4>E-Mail</h4>
+              <a href="mailto:info@hartmann-kanzlei.de">info@hartmann-kanzlei.de</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <h4>Öffnungszeiten</h4>
+              <p>Mo — Fr: 09:00 — 18:00 Uhr<br>Sa — So: geschlossen<br><em style="font-size:.85rem;color:var(--text-light);">Termine nach Vereinbarung auch außerhalb der Geschäftszeiten möglich.</em></p>
+            </div>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4!2d13.3!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850e1e9b0f0a1%3A0x1234567890abcdef!2sKurf%C3%BCrstendamm%2042%2C%2010719%20Berlin!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Standort Kanzlei Hartmann &amp; Kollegen"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about"><a href="index.html" class="logo" style="margin-bottom:1rem;"><div class="logo-icon">H</div><div class="logo-text" style="color:#fff;">Hartmann & Kollegen<span>Rechtsanwälte</span></div></a><p>Ihre erfahrene Kanzlei in Berlin-Charlottenburg.</p></div>
+        <div class="footer-links"><h4>Kanzlei</h4><a href="kanzlei.html">Über uns</a><a href="team.html">Unser Team</a><a href="rechtsgebiete.html">Rechtsgebiete</a><a href="kontakt.html">Kontakt</a></div>
+        <div class="footer-links"><h4>Rechtsgebiete</h4><a href="familienrecht.html">Familienrecht</a><a href="arbeitsrecht.html">Arbeitsrecht</a><a href="mietrecht.html">Mietrecht</a><a href="strafrecht.html">Strafrecht</a></div>
+        <div><h4>Kontakt</h4><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div>Kurfürstendamm 42<br>10719 Berlin</div></div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+493012345678">030 / 123 456 78</a></div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@hartmann-kanzlei.de">info@hartmann-kanzlei.de</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Kanzlei Hartmann & Kollegen. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <a href="tel:+493012345678" class="callback-btn" aria-label="Jetzt anrufen"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  <div class="cookie-banner"><div class="cookie-inner"><p>Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. <a href="datenschutz.html">Mehr erfahren</a></p><div class="cookie-buttons"><button class="btn btn-gold cookie-accept">Akzeptieren</button><button class="btn btn-outline cookie-decline" style="border-color:rgba(255,255,255,.3);color:#fff;">Ablehnen</button></div></div></div>
+  <script src="main.js"></script>
+</body>
+</html>
